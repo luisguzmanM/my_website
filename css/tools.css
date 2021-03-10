@@ -1,0 +1,76 @@
+.contenedor .tools {
+    background: url('../img/desktop.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-position: center center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: center;
+	align-items: center;
+    padding: 3.125rem 0px;
+    margin: auto;
+}
+
+.contenedor .tools .maincontainer {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	
+}
+
+.contenedor .tools .thecard {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d; /* Permite que el texto no se voltee cuando gire y cree el efecto espejo */
+	transition: all 0.5s ease;
+    border: 1px solid black;
+}
+
+.contenedor .tools .thecard:hover {
+	transform: rotateY(180deg);
+}
+
+.contenedor .tools .thefront {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden; /* Evita que el texto se vea cuando la tarjeta esté mostrando la parte trasera */
+	background: #c4c4c4;
+	color: #544887;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	border-radius: 50%;
+}
+
+.contenedor .tools .theback {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden; /* Evita que el texto se vea cuando la tarjeta esté mostrando la parte frontal */
+	background: #333333;
+	color: #fff;
+	transform: rotateY(180deg);
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	border-radius: 50%;
+}
+
+

@@ -1,0 +1,60 @@
+.planes {
+    width: 100%;
+    background: #453A78;
+    margin: 3.125rem 0px;
+    padding: 3.125rem 0px;
+    margin: auto;
+}
+
+.planes h2 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: .625rem;
+}
+
+.planes .contenedor {
+    width: 90%;
+    padding: .625rem;
+    margin: 3.125rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.planes .simple, .standard, .premium {
+    border: 1px solid black;
+    padding: .625rem 0px;
+    margin: .312rem;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: .625rem;
+    box-shadow: .625rem .625rem rgba(0,0,0,0.3);
+}
+
+.planes strong {
+    display: block;
+    background: #453A78;
+    color: white;
+    margin-top: .312rem;
+}
+
+@media (min-width:600px){
+    
+    .planes .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    } 
+    
+    .planes .simple, .standard, .premium {
+        padding: 20px;
+    }
+    
+    .planes .simple, .standard, .premium {
+        min-width: 30%;
+        max-width: 30%;
+    }
+}

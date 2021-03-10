@@ -1,0 +1,51 @@
+.contenedor footer .redes {
+	background: #f4f4f4;
+	height: 130px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: #333333;
+	text-align: center;
+}
+
+.contenedor footer .redes .datos a {
+	color: #333333;
+	text-decoration: none
+}
+
+.contenedor footer .redes .redes-sociales i {
+	margin: 0px 10px;
+	color: #333333;
+}
+
+footer p {
+    color: #757575;
+    text-align: center;
+    padding-bottom: 20px; 
+    background: #f4f4f4;
+}
+
+@media screen and (max-width:800px) {
+    footer p {
+	    color: #757575;
+	    text-align: center;
+	    padding-bottom: 20px; 
+	    background: #f4f4f4;
+    }
+
+    .contenedor footer .redes {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contenedor footer .redes .datos a {
+        color: #333333;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block
+    }    
+}
+
